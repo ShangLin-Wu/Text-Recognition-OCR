@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-OCRProject-OCRProjectUITests/Pods-OCRProject-OCRProjectUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework
+${BUILT_PRODUCTS_DIR}/SwiftOCR/SwiftOCR.framework

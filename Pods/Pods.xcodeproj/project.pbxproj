@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14A8BA821916D16774CE2A1B5EA10F3D /* Pods-OCRProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 662238E899CB092047BAB52BD4B6F2B7 /* Pods-OCRProject-dummy.m */; };
+		6F4964F7FF8D3CA2FE0A58DD67378D1E /* Pods-OCRProjectTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1ADEF14EDDAF554809FEB57101F227 /* Pods-OCRProjectTests-dummy.m */; };
+		7A9F42DC41B06D919D33FD67935BBE94 /* Pods-OCRProjectTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF827FBB6897150BC962774640D4FA43 /* Pods-OCRProjectTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1C727C15D58298BCAE61A8E47B57321 /* Pods-OCRProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBAF11B19680241DA25450718882CB41 /* Pods-OCRProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4921C5C411B49CE9FE34B57996F4655 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		DD6B7BC207C25B8BC6979EE8AA268484 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E346EF283ACBD9CB0F50347D6D993165 /* Pods-OCRProject-OCRProjectUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DF4FDC02B5922608F1C656DA972FFA /* Pods-OCRProject-OCRProjectUITests-dummy.m */; };
+		EB5FE194DF96B8D08AE429FD15987C03 /* Pods-OCRProject-OCRProjectUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F19FE63482094B3AA838FF7AC26E67D1 /* Pods-OCRProject-OCRProjectUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F97A735397962A048C33D298EBCE8B76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9FDB133ADB59289E9AAF7E5ACB9CE72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16B4AA46F56594CBD2FDCE79FC97E072;
+			remoteInfo = "Pods-OCRProject";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006F873EB6DF58E86DC98566881471F1 /* Pods-OCRProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCRProject.modulemap"; sourceTree = "<group>"; };
+		01C89CA8362EE47EF68EEBC775F117A6 /* Pods_OCRProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OCRProject.framework; path = "Pods-OCRProject.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		165CE85C8C03A655D4C80BFAB86F53F6 /* Pods_OCRProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OCRProjectTests.framework; path = "Pods-OCRProjectTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2647D2A273ECC25C008C1D61DAB5524C /* Pods-OCRProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCRProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F73BAF6A211639422471A734011EF55 /* Pods-OCRProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCRProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3AA49CCD4E86CC3E4ADDE296E48690E8 /* Pods_OCRProject_OCRProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OCRProject_OCRProjectUITests.framework; path = "Pods-OCRProject-OCRProjectUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E1DCFF8E9161B7B92A84CD385C355C /* Pods-OCRProject-OCRProjectUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCRProject-OCRProjectUITests-Info.plist"; sourceTree = "<group>"; };
+		413BDD8ED5C5AE9E79CB50FD1D586E83 /* Pods-OCRProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCRProject.release.xcconfig"; sourceTree = "<group>"; };
+		47489B97574DA60CA6593F88B2FFD771 /* Pods-OCRProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OCRProject-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A68A5FAFAF9D474C94E981D5F612001 /* Pods-OCRProjectTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCRProjectTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		662238E899CB092047BAB52BD4B6F2B7 /* Pods-OCRProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCRProject-dummy.m"; sourceTree = "<group>"; };
+		6D11D8E5B9845D98AC875D63380B3B4E /* Pods-OCRProjectTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCRProjectTests-Info.plist"; sourceTree = "<group>"; };
+		6F74DF8FC712420BC1A50D006DE69ADB /* Pods-OCRProject-OCRProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCRProject-OCRProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		86DF4FDC02B5922608F1C656DA972FFA /* Pods-OCRProject-OCRProjectUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCRProject-OCRProjectUITests-dummy.m"; sourceTree = "<group>"; };
+		899CC38E3ACD9289F274EDB66921B0AC /* Pods-OCRProjectTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OCRProjectTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8BAC36BCF5B9B0099921485B983B32CF /* Pods-OCRProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCRProject-acknowledgements.plist"; sourceTree = "<group>"; };
+		996A1D429701A22E2612D95E5B1919D1 /* Pods-OCRProject-OCRProjectUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCRProject-OCRProjectUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B33C7683A4EF7671E6F48FAB8E3D426C /* Pods-OCRProject-OCRProjectUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCRProject-OCRProjectUITests.modulemap"; sourceTree = "<group>"; };
+		BF76875940BB772ECB1EBD5C4FB1DD8A /* Pods-OCRProject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCRProject-Info.plist"; sourceTree = "<group>"; };
+		C02457F6296CC1F5106B2E8EC784575A /* Pods-OCRProject-OCRProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCRProject-OCRProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA9A8C3C195B78EB4DE7A9A8D361279D /* Pods-OCRProject-OCRProjectUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OCRProject-OCRProjectUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CBAF11B19680241DA25450718882CB41 /* Pods-OCRProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCRProject-umbrella.h"; sourceTree = "<group>"; };
+		CC1ADEF14EDDAF554809FEB57101F227 /* Pods-OCRProjectTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCRProjectTests-dummy.m"; sourceTree = "<group>"; };
+		CF827FBB6897150BC962774640D4FA43 /* Pods-OCRProjectTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCRProjectTests-umbrella.h"; sourceTree = "<group>"; };
+		DF3544E9EAFF573E40510E3D4F0A90C4 /* Pods-OCRProjectTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCRProjectTests.modulemap"; sourceTree = "<group>"; };
+		F19FE63482094B3AA838FF7AC26E67D1 /* Pods-OCRProject-OCRProjectUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCRProject-OCRProjectUITests-umbrella.h"; sourceTree = "<group>"; };
+		F71C5683C82BB6B6632A5A014541BEDA /* Pods-OCRProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCRProject.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25BAE27B204C1E4EFF14C3D2423E2C3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F97A735397962A048C33D298EBCE8B76 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8BBD5CDF2F0943947DBBBF5611FD060 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4921C5C411B49CE9FE34B57996F4655 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE646314D810C7F121841728D91F219B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD6B7BC207C25B8BC6979EE8AA268484 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38930D4E74095816BC8DE302E6E42F2E /* Pods-OCRProject */ = {
+			isa = PBXGroup;
+			children = (
+				006F873EB6DF58E86DC98566881471F1 /* Pods-OCRProject.modulemap */,
+				47489B97574DA60CA6593F88B2FFD771 /* Pods-OCRProject-acknowledgements.markdown */,
+				8BAC36BCF5B9B0099921485B983B32CF /* Pods-OCRProject-acknowledgements.plist */,
+				662238E899CB092047BAB52BD4B6F2B7 /* Pods-OCRProject-dummy.m */,
+				BF76875940BB772ECB1EBD5C4FB1DD8A /* Pods-OCRProject-Info.plist */,
+				CBAF11B19680241DA25450718882CB41 /* Pods-OCRProject-umbrella.h */,
+				F71C5683C82BB6B6632A5A014541BEDA /* Pods-OCRProject.debug.xcconfig */,
+				413BDD8ED5C5AE9E79CB50FD1D586E83 /* Pods-OCRProject.release.xcconfig */,
+			);
+			name = "Pods-OCRProject";
+			path = "Target Support Files/Pods-OCRProject";
+			sourceTree = "<group>";
+		};
+		3DE68114811149B867EFB968A281C033 /* Pods-OCRProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF3544E9EAFF573E40510E3D4F0A90C4 /* Pods-OCRProjectTests.modulemap */,
+				899CC38E3ACD9289F274EDB66921B0AC /* Pods-OCRProjectTests-acknowledgements.markdown */,
+				5A68A5FAFAF9D474C94E981D5F612001 /* Pods-OCRProjectTests-acknowledgements.plist */,
+				CC1ADEF14EDDAF554809FEB57101F227 /* Pods-OCRProjectTests-dummy.m */,
+				6D11D8E5B9845D98AC875D63380B3B4E /* Pods-OCRProjectTests-Info.plist */,
+				CF827FBB6897150BC962774640D4FA43 /* Pods-OCRProjectTests-umbrella.h */,
+				2647D2A273ECC25C008C1D61DAB5524C /* Pods-OCRProjectTests.debug.xcconfig */,
+				2F73BAF6A211639422471A734011EF55 /* Pods-OCRProjectTests.release.xcconfig */,
+			);
+			name = "Pods-OCRProjectTests";
+			path = "Target Support Files/Pods-OCRProjectTests";
+			sourceTree = "<group>";
+		};
+		5176614128BCE16CFF7B800E0E4E21E6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38930D4E74095816BC8DE302E6E42F2E /* Pods-OCRProject */,
+				A5096BBDD02FC702ECBA692F877538C1 /* Pods-OCRProject-OCRProjectUITests */,
+				3DE68114811149B867EFB968A281C033 /* Pods-OCRProjectTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A159B2B8903DFA09C711AC69CC417356 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01C89CA8362EE47EF68EEBC775F117A6 /* Pods_OCRProject.framework */,
+				3AA49CCD4E86CC3E4ADDE296E48690E8 /* Pods_OCRProject_OCRProjectUITests.framework */,
+				165CE85C8C03A655D4C80BFAB86F53F6 /* Pods_OCRProjectTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5096BBDD02FC702ECBA692F877538C1 /* Pods-OCRProject-OCRProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B33C7683A4EF7671E6F48FAB8E3D426C /* Pods-OCRProject-OCRProjectUITests.modulemap */,
+				CA9A8C3C195B78EB4DE7A9A8D361279D /* Pods-OCRProject-OCRProjectUITests-acknowledgements.markdown */,
+				996A1D429701A22E2612D95E5B1919D1 /* Pods-OCRProject-OCRProjectUITests-acknowledgements.plist */,
+				86DF4FDC02B5922608F1C656DA972FFA /* Pods-OCRProject-OCRProjectUITests-dummy.m */,
+				40E1DCFF8E9161B7B92A84CD385C355C /* Pods-OCRProject-OCRProjectUITests-Info.plist */,
+				F19FE63482094B3AA838FF7AC26E67D1 /* Pods-OCRProject-OCRProjectUITests-umbrella.h */,
+				C02457F6296CC1F5106B2E8EC784575A /* Pods-OCRProject-OCRProjectUITests.debug.xcconfig */,
+				6F74DF8FC712420BC1A50D006DE69ADB /* Pods-OCRProject-OCRProjectUITests.release.xcconfig */,
+			);
+			name = "Pods-OCRProject-OCRProjectUITests";
+			path = "Target Support Files/Pods-OCRProject-OCRProjectUITests";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A159B2B8903DFA09C711AC69CC417356 /* Products */,
+				5176614128BCE16CFF7B800E0E4E21E6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		19FA77F184E50B310E043E6C9CF6EBC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C727C15D58298BCAE61A8E47B57321 /* Pods-OCRProject-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244B0A526F23E2129E7A6C8CECE02738 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A9F42DC41B06D919D33FD67935BBE94 /* Pods-OCRProjectTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF62C0898FD44D99413A70BD084452A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB5FE194DF96B8D08AE429FD15987C03 /* Pods-OCRProject-OCRProjectUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		16B4AA46F56594CBD2FDCE79FC97E072 /* Pods-OCRProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17C893497DD3EE868E8320DA3D47E820 /* Build configuration list for PBXNativeTarget "Pods-OCRProject" */;
+			buildPhases = (
+				19FA77F184E50B310E043E6C9CF6EBC3 /* Headers */,
+				5C729A5DBE1390D6A49CC7F9CE5B4DC1 /* Sources */,
+				25BAE27B204C1E4EFF14C3D2423E2C3F /* Frameworks */,
+				9FDE021BAE713B5FF649161CFD4249D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-OCRProject";
+			productName = "Pods-OCRProject";
+			productReference = 01C89CA8362EE47EF68EEBC775F117A6 /* Pods_OCRProject.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		23A176097DBF5B3E17C09D510B8D271A /* Pods-OCRProject-OCRProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E0A6DD6E3BF5931634CF430E04570A1 /* Build configuration list for PBXNativeTarget "Pods-OCRProject-OCRProjectUITests" */;
+			buildPhases = (
+				FF62C0898FD44D99413A70BD084452A5 /* Headers */,
+				40699AA5442C08289F9CE40EACF2B8F5 /* Sources */,
+				A8BBD5CDF2F0943947DBBBF5611FD060 /* Frameworks */,
+				35551238EAB21E4EF9446844C20A861C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-OCRProject-OCRProjectUITests";
+			productName = "Pods-OCRProject-OCRProjectUITests";
+			productReference = 3AA49CCD4E86CC3E4ADDE296E48690E8 /* Pods_OCRProject_OCRProjectUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6131719DF05F0E175D8164FFF9CB53C6 /* Pods-OCRProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7002D45387780A5AE0C0523294A9A820 /* Build configuration list for PBXNativeTarget "Pods-OCRProjectTests" */;
+			buildPhases = (
+				244B0A526F23E2129E7A6C8CECE02738 /* Headers */,
+				824C77FE8B86FDDFA1D7F34B8EBCF219 /* Sources */,
+				EE646314D810C7F121841728D91F219B /* Frameworks */,
+				E92F34C5E60D3855EF61DA5CFBA89B95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBBD805F8589F138D3B4A9B24B2AABBD /* PBXTargetDependency */,
+			);
+			name = "Pods-OCRProjectTests";
+			productName = "Pods-OCRProjectTests";
+			productReference = 165CE85C8C03A655D4C80BFAB86F53F6 /* Pods_OCRProjectTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A159B2B8903DFA09C711AC69CC417356 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16B4AA46F56594CBD2FDCE79FC97E072 /* Pods-OCRProject */,
+				23A176097DBF5B3E17C09D510B8D271A /* Pods-OCRProject-OCRProjectUITests */,
+				6131719DF05F0E175D8164FFF9CB53C6 /* Pods-OCRProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35551238EAB21E4EF9446844C20A861C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FDE021BAE713B5FF649161CFD4249D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92F34C5E60D3855EF61DA5CFBA89B95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40699AA5442C08289F9CE40EACF2B8F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E346EF283ACBD9CB0F50347D6D993165 /* Pods-OCRProject-OCRProjectUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C729A5DBE1390D6A49CC7F9CE5B4DC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A8BA821916D16774CE2A1B5EA10F3D /* Pods-OCRProject-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		824C77FE8B86FDDFA1D7F34B8EBCF219 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4964F7FF8D3CA2FE0A58DD67378D1E /* Pods-OCRProjectTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBBD805F8589F138D3B4A9B24B2AABBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-OCRProject";
+			target = 16B4AA46F56594CBD2FDCE79FC97E072 /* Pods-OCRProject */;
+			targetProxy = A9FDB133ADB59289E9AAF7E5ACB9CE72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		176EA3001AF0A298CB6C7C6FFAE88E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F71C5683C82BB6B6632A5A014541BEDA /* Pods-OCRProject.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OCRProject/Pods-OCRProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OCRProject/Pods-OCRProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2DDD2CAC1B69C179CF63C722D177D6CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F74DF8FC712420BC1A50D006DE69ADB /* Pods-OCRProject-OCRProjectUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OCRProject-OCRProjectUITests/Pods-OCRProject-OCRProjectUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OCRProject-OCRProjectUITests/Pods-OCRProject-OCRProjectUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		40765B83A99AD786E227E65AEC5DD99E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C02457F6296CC1F5106B2E8EC784575A /* Pods-OCRProject-OCRProjectUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OCRProject-OCRProjectUITests/Pods-OCRProject-OCRProjectUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OCRProject-OCRProjectUITests/Pods-OCRProject-OCRProjectUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D61985A7198870DE1483B80F3592347F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 413BDD8ED5C5AE9E79CB50FD1D586E83 /* Pods-OCRProject.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OCRProject/Pods-OCRProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OCRProject/Pods-OCRProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2AC2054B7FD0307E8F0F43B58CD8823 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F73BAF6A211639422471A734011EF55 /* Pods-OCRProjectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OCRProjectTests/Pods-OCRProjectTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OCRProjectTests/Pods-OCRProjectTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9A47C02172B9D4D92BDC7397F6336C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2647D2A273ECC25C008C1D61DAB5524C /* Pods-OCRProjectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OCRProjectTests/Pods-OCRProjectTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OCRProjectTests/Pods-OCRProjectTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17C893497DD3EE868E8320DA3D47E820 /* Build configuration list for PBXNativeTarget "Pods-OCRProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176EA3001AF0A298CB6C7C6FFAE88E3D /* Debug */,
+				D61985A7198870DE1483B80F3592347F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */,
+				7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7002D45387780A5AE0C0523294A9A820 /* Build configuration list for PBXNativeTarget "Pods-OCRProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A47C02172B9D4D92BDC7397F6336C4 /* Debug */,
+				E2AC2054B7FD0307E8F0F43B58CD8823 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E0A6DD6E3BF5931634CF430E04570A1 /* Build configuration list for PBXNativeTarget "Pods-OCRProject-OCRProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40765B83A99AD786E227E65AEC5DD99E /* Debug */,
+				2DDD2CAC1B69C179CF63C722D177D6CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

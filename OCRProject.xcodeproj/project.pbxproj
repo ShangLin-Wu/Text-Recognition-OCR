@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11ABA02D17B3F2CD4D782CC8 /* Pods_OCRProject_OCRProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711BB6DE10198D6A82BE0088 /* Pods_OCRProject_OCRProjectUITests.framework */; };
+		3564E044248DCDCE0001311A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3564E043248DCDCE0001311A /* AppDelegate.swift */; };
+		3564E046248DCDCE0001311A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3564E045248DCDCE0001311A /* SceneDelegate.swift */; };
+		3564E048248DCDCE0001311A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3564E047248DCDCE0001311A /* ViewController.swift */; };
+		3564E04B248DCDCE0001311A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3564E049248DCDCE0001311A /* Main.storyboard */; };
+		3564E04D248DCDCF0001311A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3564E04C248DCDCF0001311A /* Assets.xcassets */; };
+		3564E050248DCDCF0001311A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3564E04E248DCDCF0001311A /* LaunchScreen.storyboard */; };
+		3564E05B248DCDD00001311A /* OCRProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3564E05A248DCDD00001311A /* OCRProjectTests.swift */; };
+		3564E066248DCDD00001311A /* OCRProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3564E065248DCDD00001311A /* OCRProjectUITests.swift */; };
+		356D0204248E30FE0036796C /* drawImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 356D0203248E30FE0036796C /* drawImageViewController.xib */; };
+		356D0206248E31340036796C /* drawImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356D0205248E31340036796C /* drawImageViewController.swift */; };
+		D2A1C1A70E8CEB9A14B55369 /* Pods_OCRProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96702D2F645D92995A200DDA /* Pods_OCRProjectTests.framework */; };
+		E7EBFC54D22F510C10DD8A7E /* Pods_OCRProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449D9CAA2749D03E7CB4B1A9 /* Pods_OCRProject.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3564E057248DCDD00001311A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3564E038248DCDCE0001311A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3564E03F248DCDCE0001311A;
+			remoteInfo = OCRProject;
+		};
+		3564E062248DCDD00001311A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3564E038248DCDCE0001311A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3564E03F248DCDCE0001311A;
+			remoteInfo = OCRProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24D221ED2529E4457F875B46 /* Pods-OCRProject-OCRProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRProject-OCRProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OCRProject-OCRProjectUITests/Pods-OCRProject-OCRProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3564E040248DCDCE0001311A /* OCRProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCRProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3564E043248DCDCE0001311A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3564E045248DCDCE0001311A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3564E047248DCDCE0001311A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3564E04A248DCDCE0001311A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3564E04C248DCDCF0001311A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3564E04F248DCDCF0001311A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3564E051248DCDCF0001311A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3564E056248DCDD00001311A /* OCRProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCRProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3564E05A248DCDD00001311A /* OCRProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRProjectTests.swift; sourceTree = "<group>"; };
+		3564E05C248DCDD00001311A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3564E061248DCDD00001311A /* OCRProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCRProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3564E065248DCDD00001311A /* OCRProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRProjectUITests.swift; sourceTree = "<group>"; };
+		3564E067248DCDD00001311A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		356D0203248E30FE0036796C /* drawImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = drawImageViewController.xib; sourceTree = "<group>"; };
+		356D0205248E31340036796C /* drawImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawImageViewController.swift; sourceTree = "<group>"; };
+		449D9CAA2749D03E7CB4B1A9 /* Pods_OCRProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCRProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D3AD8E4E01B9EDA1737A81 /* Pods-OCRProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-OCRProjectTests/Pods-OCRProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		711BB6DE10198D6A82BE0088 /* Pods_OCRProject_OCRProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCRProject_OCRProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		776C6F60BB9222BBDD829172 /* Pods-OCRProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRProject.release.xcconfig"; path = "Target Support Files/Pods-OCRProject/Pods-OCRProject.release.xcconfig"; sourceTree = "<group>"; };
+		964895E43B3C60BB80365E8C /* Pods-OCRProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRProject.debug.xcconfig"; path = "Target Support Files/Pods-OCRProject/Pods-OCRProject.debug.xcconfig"; sourceTree = "<group>"; };
+		96702D2F645D92995A200DDA /* Pods_OCRProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCRProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB44F09342BB4E29641E7AD5 /* Pods-OCRProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRProjectTests.release.xcconfig"; path = "Target Support Files/Pods-OCRProjectTests/Pods-OCRProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		CA1C1252963D25665DD62FC3 /* Pods-OCRProject-OCRProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRProject-OCRProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-OCRProject-OCRProjectUITests/Pods-OCRProject-OCRProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3564E03D248DCDCE0001311A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7EBFC54D22F510C10DD8A7E /* Pods_OCRProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3564E053248DCDD00001311A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A1C1A70E8CEB9A14B55369 /* Pods_OCRProjectTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3564E05E248DCDD00001311A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11ABA02D17B3F2CD4D782CC8 /* Pods_OCRProject_OCRProjectUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3564E037248DCDCE0001311A = {
+			isa = PBXGroup;
+			children = (
+				3564E042248DCDCE0001311A /* OCRProject */,
+				3564E059248DCDD00001311A /* OCRProjectTests */,
+				3564E064248DCDD00001311A /* OCRProjectUITests */,
+				3564E041248DCDCE0001311A /* Products */,
+				C434239817E334839B6968E4 /* Pods */,
+				A3F2709852550EE39B4A7C2B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3564E041248DCDCE0001311A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3564E040248DCDCE0001311A /* OCRProject.app */,
+				3564E056248DCDD00001311A /* OCRProjectTests.xctest */,
+				3564E061248DCDD00001311A /* OCRProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3564E042248DCDCE0001311A /* OCRProject */ = {
+			isa = PBXGroup;
+			children = (
+				3564E043248DCDCE0001311A /* AppDelegate.swift */,
+				3564E045248DCDCE0001311A /* SceneDelegate.swift */,
+				3564E049248DCDCE0001311A /* Main.storyboard */,
+				3564E047248DCDCE0001311A /* ViewController.swift */,
+				356D0205248E31340036796C /* drawImageViewController.swift */,
+				356D0203248E30FE0036796C /* drawImageViewController.xib */,
+				3564E04C248DCDCF0001311A /* Assets.xcassets */,
+				3564E04E248DCDCF0001311A /* LaunchScreen.storyboard */,
+				3564E051248DCDCF0001311A /* Info.plist */,
+			);
+			path = OCRProject;
+			sourceTree = "<group>";
+		};
+		3564E059248DCDD00001311A /* OCRProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				3564E05A248DCDD00001311A /* OCRProjectTests.swift */,
+				3564E05C248DCDD00001311A /* Info.plist */,
+			);
+			path = OCRProjectTests;
+			sourceTree = "<group>";
+		};
+		3564E064248DCDD00001311A /* OCRProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3564E065248DCDD00001311A /* OCRProjectUITests.swift */,
+				3564E067248DCDD00001311A /* Info.plist */,
+			);
+			path = OCRProjectUITests;
+			sourceTree = "<group>";
+		};
+		A3F2709852550EE39B4A7C2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				449D9CAA2749D03E7CB4B1A9 /* Pods_OCRProject.framework */,
+				711BB6DE10198D6A82BE0088 /* Pods_OCRProject_OCRProjectUITests.framework */,
+				96702D2F645D92995A200DDA /* Pods_OCRProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C434239817E334839B6968E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				964895E43B3C60BB80365E8C /* Pods-OCRProject.debug.xcconfig */,
+				776C6F60BB9222BBDD829172 /* Pods-OCRProject.release.xcconfig */,
+				24D221ED2529E4457F875B46 /* Pods-OCRProject-OCRProjectUITests.debug.xcconfig */,
+				CA1C1252963D25665DD62FC3 /* Pods-OCRProject-OCRProjectUITests.release.xcconfig */,
+				69D3AD8E4E01B9EDA1737A81 /* Pods-OCRProjectTests.debug.xcconfig */,
+				AB44F09342BB4E29641E7AD5 /* Pods-OCRProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3564E03F248DCDCE0001311A /* OCRProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3564E06A248DCDD00001311A /* Build configuration list for PBXNativeTarget "OCRProject" */;
+			buildPhases = (
+				7AA919529D5690CE47EF676F /* [CP] Check Pods Manifest.lock */,
+				3564E03C248DCDCE0001311A /* Sources */,
+				3564E03D248DCDCE0001311A /* Frameworks */,
+				3564E03E248DCDCE0001311A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCRProject;
+			productName = OCRProject;
+			productReference = 3564E040248DCDCE0001311A /* OCRProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3564E055248DCDD00001311A /* OCRProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3564E06D248DCDD00001311A /* Build configuration list for PBXNativeTarget "OCRProjectTests" */;
+			buildPhases = (
+				E30EFEBB71C5B3B4682EBE6A /* [CP] Check Pods Manifest.lock */,
+				3564E052248DCDD00001311A /* Sources */,
+				3564E053248DCDD00001311A /* Frameworks */,
+				3564E054248DCDD00001311A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3564E058248DCDD00001311A /* PBXTargetDependency */,
+			);
+			name = OCRProjectTests;
+			productName = OCRProjectTests;
+			productReference = 3564E056248DCDD00001311A /* OCRProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3564E060248DCDD00001311A /* OCRProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3564E070248DCDD00001311A /* Build configuration list for PBXNativeTarget "OCRProjectUITests" */;
+			buildPhases = (
+				85667F61C9AD9BE55DDEDFA0 /* [CP] Check Pods Manifest.lock */,
+				3564E05D248DCDD00001311A /* Sources */,
+				3564E05E248DCDD00001311A /* Frameworks */,
+				3564E05F248DCDD00001311A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3564E063248DCDD00001311A /* PBXTargetDependency */,
+			);
+			name = OCRProjectUITests;
+			productName = OCRProjectUITests;
+			productReference = 3564E061248DCDD00001311A /* OCRProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3564E038248DCDCE0001311A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = SamWu;
+				TargetAttributes = {
+					3564E03F248DCDCE0001311A = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					3564E055248DCDD00001311A = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 3564E03F248DCDCE0001311A;
+					};
+					3564E060248DCDD00001311A = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 3564E03F248DCDCE0001311A;
+					};
+				};
+			};
+			buildConfigurationList = 3564E03B248DCDCE0001311A /* Build configuration list for PBXProject "OCRProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3564E037248DCDCE0001311A;
+			productRefGroup = 3564E041248DCDCE0001311A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3564E03F248DCDCE0001311A /* OCRProject */,
+				3564E055248DCDD00001311A /* OCRProjectTests */,
+				3564E060248DCDD00001311A /* OCRProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3564E03E248DCDCE0001311A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				356D0204248E30FE0036796C /* drawImageViewController.xib in Resources */,
+				3564E050248DCDCF0001311A /* LaunchScreen.storyboard in Resources */,
+				3564E04D248DCDCF0001311A /* Assets.xcassets in Resources */,
+				3564E04B248DCDCE0001311A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3564E054248DCDD00001311A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3564E05F248DCDD00001311A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7AA919529D5690CE47EF676F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCRProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85667F61C9AD9BE55DDEDFA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCRProject-OCRProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E30EFEBB71C5B3B4682EBE6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCRProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3564E03C248DCDCE0001311A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				356D0206248E31340036796C /* drawImageViewController.swift in Sources */,
+				3564E048248DCDCE0001311A /* ViewController.swift in Sources */,
+				3564E044248DCDCE0001311A /* AppDelegate.swift in Sources */,
+				3564E046248DCDCE0001311A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3564E052248DCDD00001311A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3564E05B248DCDD00001311A /* OCRProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3564E05D248DCDD00001311A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3564E066248DCDD00001311A /* OCRProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3564E058248DCDD00001311A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3564E03F248DCDCE0001311A /* OCRProject */;
+			targetProxy = 3564E057248DCDD00001311A /* PBXContainerItemProxy */;
+		};
+		3564E063248DCDD00001311A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3564E03F248DCDCE0001311A /* OCRProject */;
+			targetProxy = 3564E062248DCDD00001311A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3564E049248DCDCE0001311A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3564E04A248DCDCE0001311A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3564E04E248DCDCF0001311A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3564E04F248DCDCF0001311A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3564E068248DCDD00001311A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3564E069248DCDD00001311A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3564E06B248DCDD00001311A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 964895E43B3C60BB80365E8C /* Pods-OCRProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVK8V4759Q;
+				INFOPLIST_FILE = OCRProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-30.OCRProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3564E06C248DCDD00001311A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 776C6F60BB9222BBDD829172 /* Pods-OCRProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVK8V4759Q;
+				INFOPLIST_FILE = OCRProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-30.OCRProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3564E06E248DCDD00001311A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69D3AD8E4E01B9EDA1737A81 /* Pods-OCRProjectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVK8V4759Q;
+				INFOPLIST_FILE = OCRProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-30.OCRProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCRProject.app/OCRProject";
+			};
+			name = Debug;
+		};
+		3564E06F248DCDD00001311A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB44F09342BB4E29641E7AD5 /* Pods-OCRProjectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVK8V4759Q;
+				INFOPLIST_FILE = OCRProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-30.OCRProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCRProject.app/OCRProject";
+			};
+			name = Release;
+		};
+		3564E071248DCDD00001311A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24D221ED2529E4457F875B46 /* Pods-OCRProject-OCRProjectUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVK8V4759Q;
+				INFOPLIST_FILE = OCRProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-30.OCRProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OCRProject;
+			};
+			name = Debug;
+		};
+		3564E072248DCDD00001311A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA1C1252963D25665DD62FC3 /* Pods-OCRProject-OCRProjectUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVK8V4759Q;
+				INFOPLIST_FILE = OCRProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-30.OCRProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OCRProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3564E03B248DCDCE0001311A /* Build configuration list for PBXProject "OCRProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3564E068248DCDD00001311A /* Debug */,
+				3564E069248DCDD00001311A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3564E06A248DCDD00001311A /* Build configuration list for PBXNativeTarget "OCRProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3564E06B248DCDD00001311A /* Debug */,
+				3564E06C248DCDD00001311A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3564E06D248DCDD00001311A /* Build configuration list for PBXNativeTarget "OCRProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3564E06E248DCDD00001311A /* Debug */,
+				3564E06F248DCDD00001311A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3564E070248DCDD00001311A /* Build configuration list for PBXNativeTarget "OCRProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3564E071248DCDD00001311A /* Debug */,
+				3564E072248DCDD00001311A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3564E038248DCDCE0001311A /* Project object */;
+}
