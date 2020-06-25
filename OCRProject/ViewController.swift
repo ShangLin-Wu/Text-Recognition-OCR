@@ -13,31 +13,47 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
-    @IBOutlet var tapToWriteBtn: UIButton!
     @IBOutlet var scanImage: UIImageView!
-    @IBOutlet var scanText: UILabel!
     @IBOutlet var scanBtn: UIButton!
+    @IBOutlet var resultView: UIView!
+    @IBOutlet var tableView: UITableView!
+    var resultText = UILabel()
+    
     private var ocrRequest = VNRecognizeTextRequest(completionHandler: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         requestAccessCamera()
         
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        
         scanImage.image = UIImage()
         scanImage.layer.borderColor = UIColor.green.cgColor
-        scanText.layer.borderColor = UIColor.green.cgColor
         
         processRecognition()
     }
     
     @IBAction func scanBtnClick(_ sender: Any) {
-        let vc = VNDocumentCameraViewController()
-        vc.delegate = self
-        present(vc, animated: true, completion: nil)
+        
+        let alertVC = UIAlertController.init(title: "Select", message: "", preferredStyle: .alert)
+        
+        let recognizeAction = UIAlertAction.init(title: "Scan Document", style: .default) { (UIAlertAction) in
+            self.recognizeDocument()
+        }
+        
+        let drawingAction = UIAlertAction.init(title: "Writing", style: .default) { (UIAlertAction) in
+            self.recognizeDrawingImage()
+
+        }
+        
+        alertVC.addAction(drawingAction)
+        alertVC.addAction(recognizeAction)
+        present(alertVC, animated: true, completion: nil)
     }
     
-    @IBAction func clickToDrawImage(_ sender: Any) {
-        
+    func recognizeDrawingImage() {
+        scanImage.image = UIImage()
         let paintVC = drawImageViewController(inputView: scanImage.image!)
         paintVC.modalPresentationStyle = .fullScreen
         
@@ -45,15 +61,21 @@ class ViewController: UIViewController {
             DispatchQueue.main.async {
                 self.scanImage.image = outputImage
                 self.processImage(outputImage)
-                self.tapToWriteBtn.isHidden = true
             }
         }
         present(paintVC, animated:true)
     }
     
+    func recognizeDocument() {
+        let vc = VNDocumentCameraViewController()
+        vc.delegate = self
+        present(vc, animated: true, completion: nil)
+    }
+    
 }
 
 extension ViewController:VNDocumentCameraViewControllerDelegate{
+    
     func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan){
         
         guard scan.pageCount>0 else {
@@ -75,6 +97,27 @@ extension ViewController:VNDocumentCameraViewControllerDelegate{
         print(error)
     }
     
+}
+
+extension ViewController:UITableViewDataSource,UITableViewDelegate{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier:"cell", for: indexPath)
+        
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.text = resultText.text
+        cell.textLabel?.textColor = .white
+        if(resultText.text != "" && resultText.text != nil){
+            cell.backgroundColor = .darkGray
+        }
+        cell.isUserInteractionEnabled = false
+        return cell
+    }
+
 }
 
 extension ViewController{
@@ -139,16 +182,22 @@ extension ViewController{
             
             
             DispatchQueue.main.async {
-                self.scanText.text = resultText
+                if(resultText == ""){
+                    resultText = "Please try it again."
+                }
+                self.resultText.text = resultText
                 self.scanBtn.isEnabled = true
+                self.tableView.isHidden = false
+                self.resultView.isHidden = false
+    
+                self.tableView.reloadData()
             }
         }
     }
     
     private func processImage(_ image:UIImage){
         guard let cgImage = image.cgImage else { return }
-        
-        scanText.text = ""
+
         scanBtn.isEnabled = false
         
         let reqHandler = VNImageRequestHandler(cgImage: cgImage, options: [:])

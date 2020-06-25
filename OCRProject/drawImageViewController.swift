@@ -15,18 +15,17 @@ struct line {
     var points : [CGPoint]
 }
 
-class drawImageViewController: UIViewController {
+class drawImageViewController: UIViewController, CanvasDelegate {
 
     @IBOutlet var canvasView: UIView!
+    @IBOutlet var writeSegment: UISegmentedControl!
 
     var didSave: ((UIImage) -> Void)?
     var imageView = UIImageView()
-    var inputImg : UIImage!
-    let canvas = Canvas()
+    var canvas = Canvas()
 
     required init(inputView:UIImage) {
         super.init(nibName: nil, bundle: nil)
-        self.inputImg = inputView
         imageView.image = inputView
     }
     
@@ -36,13 +35,26 @@ class drawImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         Bundle.main.loadNibNamed("drawImageViewController", owner: self, options: nil)
+        
+        canvas.delegate = self
+        canvas.clipsToBounds = true
+        canvas.layer.cornerRadius = 10
         canvas.frame = canvasView.frame
         
         self.view.addSubview(canvas)
+        
+        writeSegment.selectedSegmentIndex = 0
+        
     }
     
+    func beganDrawing() {
+        writeSegment.isUserInteractionEnabled = false
+        writeSegment.backgroundColor = .darkGray
+    }
     
+
     func drawOnImage() -> UIImage{
         UIGraphicsBeginImageContextWithOptions(canvas.frame.size, false, 0.0)
         let context =  UIGraphicsGetCurrentContext()!
@@ -60,7 +72,15 @@ class drawImageViewController: UIViewController {
         
         let image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
-        return image
+        if(writeSegment.selectedSegmentIndex == 0){
+            return image
+        }
+        else
+        {
+            return image.rotate(radians: .pi/2)!
+        }
+        
+
     }
     
     @IBAction func saveImageBtnClick(_ sender: Any) {
@@ -72,27 +92,34 @@ class drawImageViewController: UIViewController {
         didSave(drawImg)
         dismiss(animated: true, completion: nil)
         
-//        let image = UIGraphicsGetImageFromCurrentImageContext()
-//        UIGraphicsEndImageContext()
-//        let vc = ViewController()
-//        vc.scanImage.image = image
-//        vc.modalPresentationStyle = .fullScreen
-//        present(vc, animated: true, completion: nil)
-            
     }
     
     
     @IBAction func clearLine(_ sender: Any) {
-        canvas.clear()
+        canvas.removeFromSuperview()
+        canvas = Canvas()
+        canvas.delegate = self
+        canvas.clipsToBounds = true
+        canvas.layer.cornerRadius = 10
+        canvas.frame = canvasView.frame
+        
+        self.view.addSubview(canvas)
+        writeSegment.backgroundColor = .systemTeal
+        writeSegment.isUserInteractionEnabled = true
     }
     
     
 }
 
+protocol CanvasDelegate {
+    func beganDrawing();
+}
+
 class Canvas: UIView {
     
-    var lines = [line]()
+    var delegate:CanvasDelegate?
     
+    var lines = [line]()
     var strokeColor = UIColor.white
     var strokeWidth:Float = 5.0
     
@@ -100,10 +127,10 @@ class Canvas: UIView {
            strokeColor = color
        }
        
-       func setStrokeWidth(width:Float){
+    func setStrokeWidth(width:Float){
            strokeWidth = width
        }
-    
+        
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         guard let context =  UIGraphicsGetCurrentContext() else {return}
@@ -118,6 +145,8 @@ class Canvas: UIView {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        delegate?.beganDrawing()
         
         //init line struct
         var newLine = line.init(strokeColor: strokeColor, strokeWidth: strokeWidth, points:[])
@@ -140,10 +169,28 @@ class Canvas: UIView {
         
     }
     
-   @objc func clear(){
-    lines.removeAll()
-    setNeedsDisplay()
+}
+
+extension UIImage {
+    func rotate(radians: Float) -> UIImage? {
+        var newSize = CGRect(origin: CGPoint.zero, size: self.size).applying(CGAffineTransform(rotationAngle: CGFloat(radians))).size
+        // Trim off the extremely small float value to prevent core graphics from rounding it up
+        newSize.width = floor(newSize.width)
+        newSize.height = floor(newSize.height)
+
+        UIGraphicsBeginImageContextWithOptions(newSize, false, self.scale)
+        let context = UIGraphicsGetCurrentContext()!
+
+        // Move origin to middle
+        context.translateBy(x: newSize.width/2, y: newSize.height/2)
+        // Rotate around middle
+        context.rotate(by: CGFloat(radians))
+        // Draw the image at its center
+        self.draw(in: CGRect(x: -self.size.width/2, y: -self.size.height/2, width: self.size.width, height: self.size.height))
+
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        return newImage
     }
-    
-    
 }
